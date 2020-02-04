@@ -43,7 +43,6 @@ def main():
 
 
     for gender, files in gender_files.items():
-        scores = []
         gender_result_file = open('{}/{}.csv'.format(result_path, gender), 'w')
         gender_csv_writer = csv.writer(gender_result_file)
         gender_csv_writer.writerow(csv_header)
